@@ -1,5 +1,3 @@
-#! /usr/bin/python3
-
 import asyncio
 import warnings
 import logging
@@ -17,7 +15,7 @@ api_id = 10614857
 api_hash = '1dd14b0ebd38186b51fe828e3467615e'
 channelName = '@ssigv'
 
-client = TelegramClient('test_session', api_id, api_hash)
+client = TelegramClient('prod_session', api_id, api_hash)
 
 
 @client.on(events.NewMessage(chats=channelName))
